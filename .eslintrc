@@ -3,18 +3,22 @@
   "env": {
     "browser": true,
     "node": true,
-    "jest": true,
+    "jest": true
   },
   "globals": {
     "expect": true,
     "onmessage": true,
     "__CLIENT__": true,
+    "renderer": true,
+    "shallow": true,
+    "mount": true,
+    "render": true
   },
   "extends": "airbnb",
   "rules": {
     "import/no-extraneous-dependencies": [0],
     "import/no-named-as-default": [0],
-    "import/no-unresolved": [2, { caseSensitive: false }],
+    "import/no-unresolved": [2, { "caseSensitive": false }],
     "linebreak-style": [0],
     "no-underscore-dangle": [0],
     "no-unused-vars": ["error", { "varsIgnorePattern": "PropTypes" }],
@@ -22,6 +26,7 @@
     "react/no-unused-prop-types": [1, { "skipShapeProps": true }],
     "semi": [2, "never"],
     "no-plusplus": 0,
-    "arrow-parens": [2, "as-needed", { "requireForBlockBody": false }]
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": false }],
+    "no-mixed-operators": 0
   }
 }
