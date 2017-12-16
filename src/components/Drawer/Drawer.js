@@ -4,14 +4,14 @@ import cn from 'classnames'
 
 import './Drawer.css'
 
-const Drawer = ({ opened, clearData }) => (
+const Drawer = ({ opened, onClear }) => (
   <aside className={cn('Drawer', { Drawer__opened: opened })}>
     <div className="Drawer__row">
       Data is loaded
       <button
         className="Drawer__delete-btn"
         title="Delete current data so you can upload another file"
-        onClick={clearData}
+        onClick={onClear}
       >
         Delete data
       </button>
@@ -21,7 +21,7 @@ const Drawer = ({ opened, clearData }) => (
 
 Drawer.propTypes = {
   opened: PropTypes.bool.isRequired,
-  clearData: PropTypes.func.isRequired,
+  onClear: PropTypes.func.isRequired,
 }
 
 export default Drawer

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadForm component should match snapshot 1`] = `
+<div
+  className="UploadForm__container"
+>
+  <label
+    className="UploadForm__label"
+    htmlFor="saveInput"
+  >
+    Click to upload your save file
+    <input
+      className="UploadForm__input"
+      id="saveInput"
+      onChange={[Function]}
+      type="file"
+    />
+  </label>
+</div>
+`;

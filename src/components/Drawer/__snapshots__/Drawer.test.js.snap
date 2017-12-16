@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer component should match snapshot 1`] = `
+<aside
+  className="Drawer"
+>
+  <div
+    className="Drawer__row"
+  >
+    Data is loaded
+    <button
+      className="Drawer__delete-btn"
+      onClick={[Function]}
+      title="Delete current data so you can upload another file"
+    >
+      Delete data
+    </button>
+  </div>
+</aside>
+`;

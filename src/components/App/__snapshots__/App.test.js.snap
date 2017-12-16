@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="Header"
+  >
+    CK2 save to stats
+  </header>
+  <main
+    className="App__container"
+  >
+    <aside
+      className="Drawer"
+    >
+      <div
+        className="Drawer__row"
+      >
+        Data is loaded
+        <button
+          className="Drawer__delete-btn"
+          onClick={[Function]}
+          title="Delete current data so you can upload another file"
+        >
+          Delete data
+        </button>
+      </div>
+    </aside>
+    <div
+      className="UploadForm__container"
+    >
+      <label
+        className="UploadForm__label"
+        htmlFor="saveInput"
+      >
+        Click to upload your save file
+        <input
+          className="UploadForm__input"
+          id="saveInput"
+          onChange={[Function]}
+          type="file"
+        />
+      </label>
+    </div>
+  </main>
+</div>
+`;

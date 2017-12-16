@@ -12,31 +12,27 @@ class App extends Component {
     super(...props)
 
     this.state = {
-      dataLoaded: true,
+      isDataLoaded: false,
     }
   }
 
-  onDataLoaded = () => {
-    this.setState(() => ({ dataLoaded: true }))
+  onDataLoad = () => {
+    this.setState(() => ({ isDataLoaded: true }))
   }
 
-  clearData = () => {
-    this.setState(() => ({ dataLoaded: false }))
+  onDataClear = () => {
+    this.setState(() => ({ isDataLoaded: false }))
   }
 
   render() {
-    const { dataLoaded } = this.state
+    const { isDataLoaded } = this.state
 
     return (
-      <div className={cn('App', { 'App__data-loaded': dataLoaded })}>
+      <div className={cn('App', { 'App__data-loaded': isDataLoaded })}>
         <Header />
         <main className="App__container">
-          <Drawer opened={dataLoaded} clearData={this.clearData} />
-          {dataLoaded ? (
-            <div>Data is loaded</div>
-          ) : (
-            <UploadForm onLoad={this.onDataLoaded} />
-          )}
+          <Drawer opened={isDataLoaded} onClear={this.onDataClear} />
+          {isDataLoaded ? <div>Data is loaded</div> : <UploadForm onLoad={this.onDataLoad} />}
         </main>
       </div>
     )

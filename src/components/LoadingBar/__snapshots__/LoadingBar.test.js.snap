@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingBar component should match snapshot 1`] = `
+<div
+  className="LoadingBar__container"
+>
+  <div
+    className="LoadingBar__indicator"
+    style={
+      Object {
+        "transform": "translateX(-100%)",
+      }
+    }
+  />
+</div>
+`;
