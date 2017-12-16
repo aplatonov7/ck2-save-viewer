@@ -1,0 +1,21 @@
+.App {
+  height: 100vh;
+  background-color: #eee;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.App__container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+
+.App__data-loaded .App__container {
+  padding-left: 250px;
+}

@@ -1,0 +1,31 @@
+.UploadForm__container {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #fff;
+}
+
+.UploadForm__container-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.UploadForm__label {
+  display: block;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.UploadForm__input {
+  display: none;
+}
+
+.UploadForm__caption {
+  margin: 1rem 1rem .5rem;
+}
+
+.UploadForm__sub-caption {
+  margin: 0 1rem 1rem;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "react-ck2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ck2parser": "^1.0.0",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-app-rewired": "^1.3.8",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject",
+    "lint": "react-app-rewired lint"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "prettier": "1.9.2",
+    "worker-loader": "^1.1.0"
+  }
+}

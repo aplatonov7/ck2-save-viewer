@@ -1,0 +1,38 @@
+.Drawer__delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: .2rem .5rem;
+  background-color: #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 0;
+}
+
+.Drawer__delete-btn:after {
+  content: 'x';
+  font-size: 1rem;
+}
+
+.Drawer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  padding: 1rem;
+
+  transform: translateX(-502px);
+  transition: transform .2s ease; 
+}
+
+.Drawer.Drawer__opened {
+  transform: translateX(0);
+}
